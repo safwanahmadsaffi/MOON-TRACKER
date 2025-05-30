@@ -45,12 +45,6 @@ elif normalized_score >= 6.0:
 else:
     zone = "❌ Do Not Invest"
 
-# Output
-st.subheader("📈 Results")
-st.metric("Total Weighted Score", f"{total_weighted_score:.0f} / 1000")
-st.metric("Normalized Score", f"{normalized_score:.2f} / 10")
-st.success(f"**Investment Zone:** {zone}")
-
 # Show Breakdown Table
 st.subheader("📋 Criteria Breakdown")
 st.dataframe(pd.DataFrame({
